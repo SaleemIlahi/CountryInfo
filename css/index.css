@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -16,6 +18,7 @@ body{
     justify-content: center;
     align-items: top;
     background: var(--black-color);
+    font-family: 'Exo 2', sans-serif;
 }
 
 .container{
@@ -54,4 +57,42 @@ svg{
     justify-content: center;
     line-height: 50px;
     font-size: 1.4rem;
+}
+
+/* Country Card */
+.countryCard{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0,0.2),
+                -20px -20px 50px rgb(255, 255, 255,0.05);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.countryCard img{
+    width: 90%;
+    height: 200px;
+}
+.countryCard .name{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--red-color);
+}
+.countryDetails{
+    margin-left: 50px;
+    word-break: break-all;
+}
+.countryDetails .country{
+    color: var(--red-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.countryDetails .country span{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
