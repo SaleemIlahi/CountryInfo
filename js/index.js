@@ -8,7 +8,10 @@ const countryContainer = document.querySelector(".countryContainer");
 
 // Search Btn Function
 searchBtn.addEventListener('click',() => {
-    CountryDetails(search.value).then(countryCard)
+    if(search.value === "")
+        alert("Enter valid Country name")
+    else
+        CountryDetails(search.value).then(countryCard)
 
     search.value = "";
 })
